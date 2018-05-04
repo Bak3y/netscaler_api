@@ -3,7 +3,7 @@
 
 if [ $# -eq 0 ]; then
     echo "No arguments provided"
-    echo "Here's an example: ./netscaler_jenkins_vars.sh -e prod -v webrater.ipacc.com"
+    echo "Here's an example: ./netscaler_jenkins_vars.sh -e prod -v site.example.com"
     exit 1
 fi
 
@@ -18,7 +18,7 @@ do
          ;;
     *)
         echo "An invalid option was received. -e and -v require an argument."
-        echo "Here's an example: ./netscaler_jenkins_vars.sh -e prod -v webrater.ipacc.com"
+        echo "Here's an example: ./netscaler_jenkins_vars.sh -e prod -v site.example.com"
         exit 1
         ;;
         esac
